@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@500&family=Jockey+One&family=Lato&family=Martian+Mono:wght@300&family=Roboto+Slab:wght@200;300&family=Roboto:ital,wght@0,300;1,300&display=swap');
+* {
+    margin: 0%;
+    padding: 0;
+    overflow-x: hidden;
+}
+.container {
+    background-color: #EFEFEF;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Logo and Quote */
+
+.logo-image {
+    position: absolute;
+    width: 113px;
+    height: 75.6px;
+    left: 23px;
+    top: 15px;
+}
+.quote {
+    margin: 10vh auto 20px auto;
+    font-family: 'Source Serif 4';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    font-size: 2.5vw;
+    line-height: 44px;
+}
+
+  /* main-container */
+
+.main-container {
+    width: 380px;
+    min-height: 520px;
+    height: 100%;
+    border: 1px solid lightgrey;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+   /* Signin options */
+
+.signin-options {
+    width: 80%;
+    margin: 33px auto 5px auto;
+}
+.signin-options button {
+    width: 100%;
+    height: 45px;
+    margin: 5px 0;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+.icon {
+    width: 10%;
+    height: 25px;
+    background-color: lightgray;
+    padding-top: 5px;
+    padding-left: 7px;
+    border-radius: 1px solid #000;
+    outline: #000;
+}
+.icon-signin {
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.signin-options span {
+    font-size: 15px;
+    color: #000;
+    margin-left: 4px;
+}
+.signin-options a {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+  /* Partion  */
+
+.partion {
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.line {
+    border-top: 1px solid black;
+    width: 10.5vw;
+    margin-top: 14px;
+}
+.partion p {
+    font-size: 15px;
+    margin: 5px 10px;
+}
+
+
+   /* Form */
+form {
+    width: 80%;
+    margin: 15px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.email {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.password {
+    width: 100%;
+    margin: 10px auto 5px auto;
+}
+
+
+form button {
+    width: 100%;
+    height: 45px;
+    background-color: #36C2C2;
+    font-size: 20px;
+    padding: 8px 20px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto 30px auto;
+    font-family: 'Jockey One', sans-serif;
+}
+form button:hover {
+    background-color: #008080;
+}
+.form button:active {
+    background-color: 	#004c4c;
+}
+
+.float-label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+}
+  
+.float-label input {
+    width: 90%;
+    height: 30px;
+    padding: 14px 16px 0 10px;
+    outline: 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+  
+.float-label label {
+    font-size: 16px;
+    font-family: "Montserrat";
+    padding: 0 12px;
+    color: #000;
+    pointer-events: none;
+    position: absolute;
+    transform: translate(0, 20px) scale(1);
+    transform-origin: top left;
+    transition: all 0.2s ease-out;
+}
+.float-label input:focus {
+    border: 1.5px solid #008080;
+    background-color: #fff;
+}
+.float-label:focus-within label {
+    transform: translate(0, 8px) scale(0.75);
+}
+.float-label .Active {
+    transform: translate(0, 8px) scale(0.75);
+}
+
+.icon-1 {
+    position: absolute;
+    right: 20px;
+    top : 15px;
+}
+  
+
+  
+
+
+
+@media screen and (max-width: 560px) {
+    .container {
+        box-sizing: content-box;
+        height: 100%;
+        overflow-x: hidden;
+    }
+    .logo-image {
+        width: 80px;
+        height: 55.6px;
+        left: 15px;
+        top: 3vh;
+    }
+    .quote {
+        width: 80%;
+        font-size: 20px;
+        margin: 12vh auto 2vh auto;
+        line-height: 25px;
+    }
+    .partion {
+        margin: 20px auto;
+    }
+    .line {
+        border-top: 1px solid black;
+        width: 30vw;
+        margin-top: 14px;
+    }
+    form {
+        width: 84%;
+        margin: 15px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .password input {
+        width: 82%;
+        height: 25px;
+        text-indent: 5px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .main-container {
+        max-width: 450px;
+        min-height: 550px;
+        height: 100%;
+        width: 90%;
+        margin-bottom: 10px;
+        margin-top: 5vh;
+    }
+    .logo-image {
+        width: 100px;
+        height: 65.6px;
+        left: 40px;
+        top: 4vh;
+    }
+    .quote {
+        width: 80%;
+        font-size: 40px;
+        margin: 12vh auto 2vh auto;
+        line-height: 40px;
+    }
+    .line {
+        border-top: 1px solid black;
+        width: 19.5vw;
+        margin-top: 14px;
+    }
+    .float-label input {
+        width: 90%;
+        height: 30px;
+        padding: 14px 16px 0 10px;
+        outline: 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 8px auto;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .main-container {
+        max-width: 550px;
+        min-height: 750px;
+        height: 100%;
+        width: 90%;
+        margin-bottom: 10px;
+        margin-top: 5vh;
+    }
+    .quote {
+        width: 80%;
+        font-size: 50px;
+        margin: 12vh auto 2vh auto;
+        line-height: 60px;
+    }
+    .signin-options button {
+        margin: 10px 0;
+    }
+    .signin-options {
+        width: 80%;
+        margin: 70px auto 5px auto;
+    }
+    .signin-options span {
+        font-size: 20px;
+    }
+    .line {
+        width: 22vw;
+    }
+    .float-label input {
+        height: 40px;
+        margin: 12px auto;
+        font-size: 20px;
+    }
+    .float-label label {
+        font-size: 20px;
+        transform: translate(0, 30px) scale(1);
+    }
+    .float-label:focus-within label {
+        transform: translate(0, 15px) scale(0.75);
+    }
+    form button {
+        height: 100%;
+        background-color: #36C2C2;
+        font-size: 30px;
+        margin: 20px auto 30px auto;
+    }
+    
+}
