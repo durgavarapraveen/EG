@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400&family=Jockey+One&family=Lato&family=Martian+Mono:wght@300&family=Roboto+Slab:wght@200;300&family=Roboto:ital,wght@0,300;1,300&display=swap');
+* {
+    margin: 0%;
+    padding: 0;
+    overflow-x: hidden;
+}
+.home_container {
+    width: 100vw;
+    min-height: 100vh;
+}
+header {
+    background-color: #EFEFEF;
+}
+.home_header {
+    width: 100vw;
+    height: 92px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 90vw;
+    margin: auto;
+}
+.head-logo-image {
+    width: 104px;
+    height: 72px;
+    margin-top: 10px;
+}
+.home-profile-view {
+    position: absolute;
+    width: 274px;
+    height: 42px;
+    border: none;
+    outline: none;
+    background-color: #D9D9D9;
+    font-size: 20px;
+    float: right;
+    right: 150px;
+    margin-top: 25px;
+    cursor: pointer;
+}
+.head-profile-pic {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: absolute;
+    float: right;
+    right: 20px;
+    margin-top: 25px;
+}
+.home_guidee_guide {
+    width: 120px;
+    border-radius: 21px;
+    background-color: #FFFFFF;
+    height: 30px;
+    left: 45%;
+    position: absolute;
+    top: 28px;
+}
+.home_guidee_guide .guidee {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    background-color: #008080;
+    outline: none;
+    border: none;
+    border-radius: 21px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    cursor: pointer;
+}
+.home_guidee_guide .guide {
+    width: 70px;
+    height: 30px;
+    position: absolute;
+    background-color: #008080;
+    outline: none;
+    border: none;
+    border-radius: 21px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    cursor: pointer;
+    float: right;
+    right: 0;
+}
+.home_gui {
+    position: absolute;
+    top: 60px;
+    left: 45%;
+    display: flex;
+    flex-direction: row;
+}
+.home_guidee, .home_guide {
+    font-size: 20px;
+    padding: 5px;
+    font-family: "Montserrat";
+}
+
+/* Home Chat Box */
+
+.home_chat_box {
+    width: 100vw;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    background-color: #D9D9D9;
+    justify-content: space-around;
+}
+.home_chat_box_logocontainer {
+    position: relative;
+}
+.home_chat_box_img {
+    width: 90px;
+    height: 90px;
+    color: #1cA6A6;
+}
+.home_chat_box_logocontainer p {
+    position: absolute;
+    top: 27px;
+    font-size: 25px;
+    margin-left: 18px;
+    color: #FFFFFF;
+}
+.home_chat_box_messages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.home_chat_box_messages p {
+    font-size: 25px;
+    font-weight: 800;
+}
+.home_chat_box_messages_button {
+    width: 204px;
+    height: 42px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* main Box of home page */
+
+.home_main_container {
+    width: 100vw;
+    height: 600px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.home_message_box {
+    width: 420px;
+    height: 570px;
+    background-color: #95e1e1;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.home_message_box_message {
+    width: 360px;
+    height: 170px;
+    background-color: #D9D9D9;
+    margin: 20px 0 5px 0;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+}
+.home_message_box_scroll {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+
+.home_message_box_user {
+    width: 90%;
+    background-color: #EFEFEF;
+    height: 40px;
+    border-radius: 8px;
+    margin: 15px 0;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.home_message_box_field {
+    position: absolute;
+    top: 8px;
+    left: 15px;
+    z-index: 1;
+    font-size: 20px;
+    font-family: "Montserrat";
+}
+.home_message_box_line {
+    position: absolute;
+    border-left: 1.5px solid #000000;
+    height: 40px;
+    left: 80px;
+}
+.home_message_box_username {
+    position: absolute;
+    top: 0;
+    left: 100px;
+    font-size: 20px;
+    top: 8px;
+    font-family: "Montserrat";
+}
+.home_todo_box {
+    width: 650px;
+    height: 570px;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.home_todo_list {
+    color: #FFFFFF;
+    background-color: #008080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    max-height: 200px;
+    overflow-y: hidden;
+    max-width: 200px;
+    cursor: pointer;
+}
+.home_todo_list p {
+    padding: 30px 30px;
+    font-size: 30px;
+    font-family: "Montserrat";
+}

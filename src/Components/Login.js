@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import './Login.css';
 import { Link } from 'react-router-dom';
 import { FcGoogle } from "react-icons/fc";
+
+
 function Login() {
 document.title = 'EG - Sign up';
 
@@ -9,12 +11,10 @@ document.title = 'EG - Sign up';
     const [password,setPassword] = useState("")
     const [ConfirmPassword,setConfirmPassword] = useState("")
     const [click,setClick] = useState(false)
-    const [Data,setData] = useState("")
     const [isActive1, setIsActive1] = useState(false);
     const [isActive2, setIsActive2] = useState(false);
     const [isActive3, setIsActive3] = useState(false);
-    const [val,setVal] = useState(false);
-
+    const [val,setVal] = useState("");
     function handleTextChange1(text) {
       setVal(text);
       if(text!=="") {
@@ -46,9 +46,6 @@ document.title = 'EG - Sign up';
     const handleSubmit = (event) => {
         const info = {email:email,password:password};
         console.log(info);
-        const emailid = {email:email}
-        const pass = {password:password}
-        const confirmpass = {ConfirmPassword:ConfirmPassword}
         event.preventDefault();
     }
     
@@ -93,7 +90,7 @@ document.title = 'EG - Sign up';
                 <form action='' onSubmit={handleSubmit} >
                     <div className='email'>
                         <div className='float-label'>
-                            <input type='email' value={email}  onChange={handelEmailchange} required/>
+                            <input type='email' value={email}  onChange={handelEmailchange} pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required/>
                             <label className={isActive1 ? "Active": ""} htmlFor='email' >
                                 Email
                             </label>
@@ -119,7 +116,9 @@ document.title = 'EG - Sign up';
                         </div>
                     </div>
 
-                    <button type='submit'>continue</button>
+                    <Link to='/Mobileverification' >
+                        <button type='submit'>continue</button>
+                    </Link>
                 </form>
             </div>
         </div>
