@@ -1,10 +1,12 @@
 import React,{useState} from 'react'
 import { useEffect } from 'react';
+import {Link} from 'react-router-dom';
 import './PersonalInfo_1.css'
 import { useFormik } from "formik";
 import Select from "react-select";
 import csc from "country-state-city";
 import { Country, State, City } from 'country-state-city';
+import Multiselect from 'multiselect-react-dropdown';
 
 function PersonalInfo_1() {
 document.title = "EG - Personal Info"
@@ -72,9 +74,16 @@ document.title = "EG - Personal Info"
                 </div>
                 <div className='hobbies'>
                     <label>Hobbies</label>
-                    <input type='text' required value={hobby} onChange={(e) => setHobby(e.target.value)} />
+                    {/* <input type='text' required value={hobby} onChange={(e) => setHobby(e.target.value)} /> */}
+                    <Multiselect 
+                    isObject={false}
+                    options={['Hindi','Telugu','Tamil','English','Kanada']}
+                    
+                    />
                 </div>
-                <button type='submit'>continue</button>
+                <Link to='/Guidee'>
+                    <button type='submit'>continue</button>
+                </Link>
             </form>
         </div>
     </div>

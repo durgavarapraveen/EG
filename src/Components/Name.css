@@ -2,7 +2,7 @@
 * {
     margin: 0%;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .container-Name {
     background-color: #EFEFEF;
@@ -17,9 +17,7 @@
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-}
-
-/* Logo and Quote */
+} 
 
 .logo-image-Name {
     position: absolute;
@@ -37,8 +35,6 @@
     font-size: 2.5vw;
     line-height: 44px;
 }
-
-  /* main-container */
 
 .main-container-Name {
     width: 400px;

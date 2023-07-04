@@ -2,7 +2,7 @@
 * {
     margin: 0%;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .container {
     background-color: #EFEFEF;
@@ -48,7 +48,7 @@
     background-color: #fff;
     border-radius: 10px;
     margin-bottom: 15px;
-}
+} 
 
    /* Signin options */
 
@@ -91,7 +91,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-}
+} 
 
   /* Partion  */
 

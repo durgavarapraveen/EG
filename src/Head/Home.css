@@ -2,7 +2,7 @@
 * {
     margin: 0%;
     padding: 0;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 .home_container {
     width: 100vw;
