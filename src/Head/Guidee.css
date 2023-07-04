@@ -54,7 +54,7 @@
 .guidee-goals-list {
     width: 80%;
     margin: auto;
-    height: 300px;
+    height: 250px;
     display: flex;
     flex-direction: column;
 }
@@ -100,4 +100,22 @@
     outline: none;
     cursor: pointer;
     margin-left: 20px;
+}
+.guidee-change-button {
+    margin: 10px auto;
+    width: 480px;
+}
+.guidee-change-button button {
+    width: 100%;
+    height: 45px;
+    background-color: #36C2C2;
+    font-size: 20px;
+    padding: 8px 20px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    margin: 10px auto 10px auto;
+    font-family: 'Jockey One', sans-serif;
+    cursor: pointer;
+
 }

@@ -9,18 +9,20 @@ import Name from './Components/Name';
 import PersonalInfo_1 from './Components/PersonalInfo_1';
 import Home from './Head/Home'
 import Guidee from './Head/Guidee';
+import Guide from './Head/Guide';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Switch>
-          {/* <Route path='/' exact component={Login} />
+          <Route path='/' exact component={Login} />
           <Route path='/Mobileverification' exact component={MobileVerify} />
           <Route path='/Name' exact component={Name} />
           <Route path='/PersonalInfo_1' exact component={PersonalInfo_1} />
-          <Route path='/Home' exact component={Home} /> */}
-          <Route path='/' exact component={Guidee} />
+          <Route path='/Home' exact component={Home} />
+          <Route path='/Guidee' exact component={Guidee} />
+          <Route path='/Guide' exact component={Guide} />
         </Switch>
       </Router>
       {/* <OtpForm /> */}

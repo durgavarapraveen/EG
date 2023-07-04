@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import Select from 'react-select';
-import './Guidee.css';
+import './Guide.css';
 import { Todos } from './Todos';
 import {Link} from 'react-router-dom';
 
-function Guidee() {
+function Guide() {
     
   const [selectedOption, setSelectedOption] = useState("");
   const [lastDate,setLastDate] = useState("")
@@ -41,7 +41,7 @@ function Guidee() {
     };
     const newTodoList = [...todoList,newtodo]
     setTodoList(newTodoList);
-    setSelectedOption(""); // Assuming `setSelectedOption` is the function to update the selected option state
+    setSelectedOption(""); 
     setLastDate("");
   }
 
@@ -56,12 +56,12 @@ function Guidee() {
     <div>
         <div className='container'>
           <img src='\images\Frame 2 1.png' alt='EG' className='logo-image-Name' />
-          <p className='quote-Name'>Let's get the guidance for your future achievements🏆.</p>
+          <p className='quote-Name'>Let's guide with your achievements and experience.</p>
           <div className='main-container-guidee'>
             <form onSubmit={handleSubmit}>
               <div className='guidee-form'>
-                <div className='guidee-goals'>
-                  <label>Fields trying to achieve</label>
+                <div className='guide-goals'>
+                  <label>Fields achieved</label>
                   <Select
                       options={options}
                       onChange={handleTypeSelect}
@@ -73,11 +73,11 @@ function Guidee() {
                       menuPlacement='auto'
                   />
                 </div>
-                <div className='guidee-enddate'>
-                  <label>Deadline</label>
-                  <input type='date' value={lastDate} onChange={(e) => setLastDate(e.target.value)} required/>
+                <div className='guide-enddate'>
+                  <label>Proof of achievement</label>
+                  <input type='file' value={lastDate} onChange={(e) => setLastDate(e.target.value)} required/>
                 </div>
-                <input type='submit' value='Add' className='guidee-form-add'  />
+                <input type='submit' accept='.doc,.docx,.xml,.jpg,.pdf,' value='Add' className='guidee-form-add' multiple  />
               </div>
             </form>
             <div className='guidee-goals-list'>
@@ -96,4 +96,4 @@ function Guidee() {
     )
 }
 
-export default Guidee
+export default Guide
